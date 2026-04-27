@@ -1,2 +1,2 @@
-# Ejercicio-1
-Este es el repositorio del ejercicio 1
+# Pokédex E1
+Pokédex con listado real desde PokéAPI
