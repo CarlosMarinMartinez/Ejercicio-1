@@ -1,5 +1,5 @@
 let offset = 0;
-const limit = 50; // 50 Pokémon → 5 columnas → 10 filas
+const limit = 25; // 25 Pokémon → 5 columnas → 5 filas
 let totalPokemons = 1025;
 
 // Cargar lista
@@ -98,7 +98,7 @@ async function loadDetail(id) {
       <button ${data.id === 1 ? "disabled" : ""} 
         onclick="loadDetail(${data.id - 1})">Anterior</button>
 
-      <button ${data.id === 10025 ? "disabled" : ""} 
+      <button ${data.id === totalPokemons ? "disabled" : ""} 
         onclick="loadDetail(${data.id + 1})">Siguiente</button>
 
       <br><br>
